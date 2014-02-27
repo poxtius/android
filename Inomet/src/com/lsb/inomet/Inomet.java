@@ -38,6 +38,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -45,6 +46,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.DigitalClock;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -59,6 +61,8 @@ public class Inomet extends Activity {
 	private final String TAG = getClass().getSimpleName();
 	
 	private ImageView logoInomet, lluviaInomet;
+	@SuppressWarnings("deprecation")
+	private DigitalClock digitalClock;
 	private TextView humedadText, contaText, vientoText, tempeText, presionText, luminosidadText;
 
 	@Override
@@ -72,7 +76,12 @@ public class Inomet extends Activity {
 		
 	}
 
+	@SuppressWarnings("deprecation")
 	private void setup_widget() {
+		
+		digitalClock = (DigitalClock) findViewById(R.id.relojDigital);
+		Typeface font =Typeface.createFromAsset(getAssets(), "damag.ttf");
+		digitalClock.setTypeface(font);
 		
 		logoInomet = (ImageView) findViewById(R.id.logoInomet);
 		logoInomet.setOnClickListener(new OnClickListener() {
