@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inomet</string>
+    <string name="action_settings">Settings</string>
+    <string name="logoInomet">Inomet</string>
+    <string name="lluviaInomet">Llueve?</string>
+    <string name="tempeInomet">Temperatura</string>
+    <string name="humedadInomet">Humedad</string>
+    <string name="presionInomet">Presión</string>
+    <string name="contaInomet">Contaminación</string>
+	<string name="vientoInomet">Viento</string>
+	<string name="luminosidadInomet">Luminosidad</string>
+	<string name="direccionEstacion">Dirección de la Estación Metereologica</string>
+	<string name="direccionWeb">10.123.5.43</string>
+	<string name="dirOKestacion">OK</string>
+	
+	<string name="license">Copyright &#169; Josema Fernandez\nEstos ejemplos y su código fuente está licenciados bajo GPLv3 (http://www.gnu.org/licenses/). Open Source Software!</string>
+	
+</resources>
