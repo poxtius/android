@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:visibility="visible"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/erdikoa"
+        android:layout_width="875dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rlezkerra"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/surfacena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <SurfaceView
+                android:id="@+id/surface_pi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1" 
+                android:contentDescription="@string/surface_pi"/>
+
+            <SurfaceView
+                android:id="@+id/surface_ps"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/surface_ps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/argazkiena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/robotaren_bideoa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/borobildu_ertzak"
+                android:contentDescription="@string/robotaren_bideoa"
+                android:src="@drawable/vista_robot" />
+
+            <ImageView
+                android:id="@+id/ps_argazkia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/borobildu_ertzak"
+                android:contentDescription="@string/ps_argazkia"
+                android:src="@drawable/vista_robot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xtionena"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/xtiond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/borobildu_ertzak"
+                android:contentDescription="@string/xtiond"
+                android:src="@drawable/vista_robot" />
+
+            <ImageView
+                android:id="@+id/xtionc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/borobildu_ertzak"
+                android:contentDescription="@string/xtionc"
+                android:src="@drawable/vista_robot" />
+
+            <ImageView
+                android:id="@+id/xtioni"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/borobildu_ertzak"
+                android:contentDescription="@string/xtioni"
+                android:src="@drawable/vista_robot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sentsoreak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" >
+
+            <Button
+                android:id="@+id/start_sentsoreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borobildu_ertzak"
+                android:text="@string/start_sentsoreak"
+                android:layout_marginRight="15dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/sentsore_temperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borobildu_ertzak"
+                android:text="@string/sentsore_temperatura"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rleskubia"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/stop_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ezkerrera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borobildu_ertzak"
+            android:contentDescription="@string/stop"
+            android:src="@drawable/stop" />
+
+        <ImageButton
+            android:id="@+id/ezkerrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/borobildu_ertzak"
+            android:contentDescription="@string/ezkerrera"
+            android:gravity="left"
+            android:src="@drawable/ezkerrera" />
+
+        <ImageButton
+            android:id="@+id/eskuinera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stop_1"
+            android:layout_toRightOf="@+id/ezkerrera"
+            android:background="@drawable/borobildu_ertzak"
+            android:contentDescription="@string/eskuinera"
+            android:gravity="right"
+            android:src="@drawable/eskuinera" />
+
+        <Button
+            android:id="@+id/aginduak"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stop_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/aginduak" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlezkerra"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp" >
+
+        <ImageButton
+            android:id="@+id/aurrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stop"
+            android:background="@drawable/borobildu_ertzak"
+            android:contentDescription="@string/aurrera"
+            android:scaleType="center"
+            android:src="@drawable/aurrera" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borobildu_ertzak"
+            android:contentDescription="@string/stop"
+            android:src="@drawable/stop" />
+
+        <ImageButton
+            android:id="@+id/atzera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stop"
+            android:background="@drawable/borobildu_ertzak"
+            android:contentDescription="@string/atzera"
+            android:src="@drawable/atzera" />
+    </RelativeLayout>
+
+</RelativeLayout>

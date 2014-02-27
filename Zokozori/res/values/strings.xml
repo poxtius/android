@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zokozori</string>
+    <string name="action_settings">Settings</string>
+    <string name="surface_pi">Robotaren kamarak bidaltzen duen bideoa</string>
+    <string name="surface_ps">Robotaren PS Webkamarak bidaltzen duen bideoa</string>
+    <string name="robotaren_bideoa">Robotaren kamarak bidaltzen dituen irudiak</string>
+    <string name="ps_argazkia">Ps-Webkamarak bidaltzen dituen irudiak</string>
+    <string name="xtiond">Sakontasun Xtion Irudia </string>
+    <string name="xtionc">Koloretako Xtion Irudia</string>
+    <string name="xtioni">Infragorri Xtion Irudia</string>  
+    <string name="capture">CAPTURE IMAGINE</string>
+    <string name="start_sentsoreak">START SENTSOREAK</string>
+    <string name="aginduak">AGINDUAK</string>
+    <string name="sentsore_temperatura">Tenperatura ºC</string>
+    <string name="aurrera">Robota aurrerantza ibiltzen jartzeko botoia</string>
+    <string name="atzera">Robota atzerantza ibiltzen jartzeko botoia</string>
+    <string name="eskuinera">Robota eskuinera biratzeko botoia</string>
+    <string name="ezkerrera">Robota ezkerrera biratzeko botoia</string>
+    <string name="stop">Robota gelditzeko botoia</string>
+
+</resources>
