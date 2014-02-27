@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">com.lsb.arduinoledswitch</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="infoSwitch"> </string>
+    <string name="btOn">ON</string>
+    <string name="btOff">OFF</string>
+    
+
+</resources>
