@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:orientation="horizontal"    	
+        >
+        
+        <Button 
+            android:id="@+id/btColor"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Color"
+         />
+        <Button 
+            android:id="@+id/btDepth"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Depth"
+         />
+        <Button 
+            android:id="@+id/btIr"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="IR"
+         />
+        
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/ivXtion"
+        android:layout_width="320dip"
+        android:layout_height="240dip"/>
+
+</LinearLayout>
