@@ -1,0 +1,211 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical" 
+  android:background="#99CCFF"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent">
+  
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Inomet" >
+    
+    <DigitalClock 
+        android:id="@+id/relojDigital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="true"
+        android:textSize="25sp"
+        android:textColor="#ff000000"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/logoInomet"
+            android:layout_width="104dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/logoInomet"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/lluviaInomet"
+            android:layout_width="69dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/lluviaInomet"
+            android:src="@drawable/lluvia" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/tempeInomet"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="18dp"
+                android:contentDescription="@string/tempeInomet"
+                android:src="@drawable/tempe" />
+
+            <TextView
+                android:id="@+id/tempeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:hint="@string/tempeInomet" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/humedadInomet"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="14dp"
+                android:contentDescription="@string/humedadInomet"
+                android:src="@drawable/humedad" />
+
+            <TextView
+                android:id="@+id/humedadText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/humedadInomet"
+                android:paddingTop="10dp"
+                tools:ignore="InefficientWeight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/presionInomet"
+                android:layout_width="34dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/presionInomet"
+                android:src="@drawable/presion" />
+
+            <TextView
+                android:id="@+id/presionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:ems="10"
+                android:hint="@string/presionInomet"
+                android:paddingTop="5dp"
+                tools:ignore="InefficientWeight" >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/contaInomet"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_marginRight="9dp"
+                android:paddingTop="5dp"
+                android:contentDescription="@string/contaInomet"
+                android:src="@drawable/contaminacion" />
+
+            <TextView
+                android:id="@+id/contaminacionText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:hint="@string/contaInomet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/vientoInomet"
+                android:layout_width="48dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/vientoInomet"
+                android:src="@drawable/viento" />
+
+            <TextView
+                android:id="@+id/vientoText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:hint="@string/vientoInomet" />
+
+        </LinearLayout>
+        
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/luminosidadInomet"
+                android:layout_width="48dp"
+                android:layout_height="31dp"
+                android:layout_marginRight="2dp"
+                android:contentDescription="@string/luminosidadInomet"
+                android:src="@drawable/luminosidad" />
+
+            <TextView
+                android:id="@+id/luminosidadText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:hint="@string/luminosidadInomet" />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/license"
+        android:textColor="#000000"
+        android:textSize="10dip"
+        tools:ignore="ObsoleteLayoutParam,SpUsage" />
+
+    </LinearLayout>
+
+    
+</RelativeLayout>
+
+
+
+</ScrollView>
